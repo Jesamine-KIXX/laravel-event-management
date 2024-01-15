@@ -13,7 +13,7 @@ class Event extends Model
 
     protected $fillable = ['name', 'description', 'start_time', 'end_time', 'user_id'];
 
-    public function users(): BelongsTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
